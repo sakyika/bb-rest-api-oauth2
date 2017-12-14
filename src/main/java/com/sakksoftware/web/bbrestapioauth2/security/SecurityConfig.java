@@ -38,6 +38,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity
                 .formLogin().disable() // disable form authentication
                 .anonymous().disable() // disable from anonymous user
+                .httpBasic().and()
+                // restricting access to authenticated users
                 .authorizeRequests().anyRequest().denyAll(); // denying all access
     }
 
