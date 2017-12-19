@@ -24,9 +24,7 @@ public class BbRestApiOauth2Application {
 	}
 
 	@Bean
-	CommandLineRunner init(
-			AccountService accountService
-	) {
+	CommandLineRunner init(AccountService accountService) {
 		return (evt) -> Arrays.asList(
 				"user,admin,john,robert,ana".split(",")).forEach(
 				username -> {
