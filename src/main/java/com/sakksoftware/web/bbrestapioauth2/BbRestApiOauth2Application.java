@@ -22,7 +22,7 @@ public class BbRestApiOauth2Application {
 	public static void main(String[] args) {
 		SpringApplication.run(BbRestApiOauth2Application.class, args);
 	}
-
+/*
 	@Bean
 	CommandLineRunner init(AccountService accountService) {
 		return (evt) -> Arrays.asList(
@@ -41,4 +41,7 @@ public class BbRestApiOauth2Application {
 				}
 		);
 	}
+
+*/
+
 }
